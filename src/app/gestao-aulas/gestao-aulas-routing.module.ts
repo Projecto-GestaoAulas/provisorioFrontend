@@ -1,8 +1,14 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { GestaoAulasComponent } from './gestao-aulas.component';
 
 
-const routes: Routes = [];
+const routes: Routes = [
+  {
+    path: '',
+    component: GestaoAulasComponent
+  }
+];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

@@ -7,12 +7,15 @@ import { BlocoNotasComponent } from './bloco-notas/bloco-notas.component';
 import { AcademiasComponent } from './academias/academias.component';
 import { CalendarioComponent } from './calendario/calendario.component';
 import { AulasComponent } from './aulas/aulas.component';
+import { SharedModule } from './shared/shared.module';
+import { GestaoAulasComponent } from './gestao-aulas.component';
 
 
 @NgModule({
-  declarations: [ForumComponent, BlocoNotasComponent, AcademiasComponent, CalendarioComponent, AulasComponent],
+  declarations: [GestaoAulasComponent, ForumComponent, BlocoNotasComponent, AcademiasComponent, CalendarioComponent, AulasComponent],
   imports: [
     CommonModule,
+    SharedModule,
     GestaoAulasRoutingModule
   ]
 })
